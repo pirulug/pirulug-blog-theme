@@ -1,0 +1,53 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Gallery'
+  -pageUrl = 'dash_gallery'
+
+block content
+  .card
+    h6.card-header Gallery
+    .card-body
+      a.btn.btn-primary.col-12(href='dash_add_image.html')
+        i.fa.fa-edit
+        |  Add Image
+      br
+      br
+
+      table.table.table-border.table-hover
+        thead
+          tr
+            th Image
+            th Title
+            th Active
+            th Actions
+        tbody
+          tr
+            td
+              center
+                img(src='https://dummyimage.com/150x150/d63384/fff.jpg' width='100px' height='75px')
+            td 1
+            td Yes
+            td
+              a.btn.btn-primary.btn-sm(href='?edit-id=1')
+                i.fa.fa-edit
+                |  Edit
+              a.btn.btn-danger.btn-sm(href='?delete-id=1')
+                i.fa.fa-trash
+                |  Delete
+          tr.even
+            td
+              center
+                img(src='https://dummyimage.com/150x150/d63384/fff.jpg' width='100px' height='75px')
+            td zxc
+            td Yes
+            td
+              a.btn.btn-primary.btn-sm(href='?edit-id=2')
+                i.fa.fa-edit
+                |  Edit
+              a.btn.btn-danger.btn-sm(href='?delete-id=2')
+                i.fa.fa-trash
+                |  Delete
+
+
+block scripts 

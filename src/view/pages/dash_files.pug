@@ -1,0 +1,163 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Files'
+  -pageUrl = 'dash_files'
+
+block content
+  .card
+    h6.card-header Files
+    .card-body
+      a.btn.btn-primary.col-12(href='dash_upload_file.html')
+        i.fa.fa-edit
+        |  Upload File
+      br
+      br
+
+      .row
+        .col-sm-12
+          table.table.table-border.table-hover
+            thead
+              tr
+                th File Name
+                th Type
+                th Size
+                th Uploaded
+                th Actions
+            tbody
+              tr
+                td col-de-la-madeleine-5330x2998-9697.jpg
+                td file
+                td 5.90 MB
+                td 28.02.2023, 02:37
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_91fhyurtd5k6j4sg70382we.jpg' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=15')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td chica-cabello-morado_3840x2160_xtrafondos.com.jpg
+                td file
+                td 1.77 MB
+                td 28.02.2023, 02:37
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_2gr8f7y3et5jw9hu6d1sk04.jpg' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=14')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td anime-girl-girly-6024x4084-9792.jpg
+                td file
+                td 2.06 MB
+                td 28.02.2023, 02:37
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_egkfu1hr6tj2s5w0y34d789.jpg' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=13')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td akame-de-akame-ga-kill_4286x2410_xtrafondos.com.jpg
+                td file
+                td 3.76 MB
+                td 28.02.2023, 02:37
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_2uh1jwtyef96d37rks80g45.jpg' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=12')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td akali-kennen-shen-league-of-legends_4000x2500_xtrafondos.com.jpg
+                td file
+                td 3.71 MB
+                td 28.02.2023, 02:36
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_8j2u37yk9d46sw0hf1terg5.jpg' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=11')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td Logos.zip
+                td file
+                td 1.96 MB
+                td 28.02.2023, 02:36
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_0rj8k71w26seh4fy93tugd5.zip' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=10')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td logo-istp-sam.png
+                td file
+                td 559.20 KB
+                td 28.02.2023, 02:36
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_je0shyu2kftd894w736gr15.png' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=9')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td logo-Enfermeria.png
+                td file
+                td 1.43 MB
+                td 28.02.2023, 02:36
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_f907tseru41wgy3hk8dj652.png' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=8')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td baner-2-Enfermeria.png
+                td file
+                td 24.40 MB
+                td 28.02.2023, 02:36
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_wg4sjr2u60td17598kehf3y.png' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=7')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td p-icon.jpg
+                td file
+                td 559.38 KB
+                td 28.02.2023, 02:36
+                td
+                  a.btn.btn-success.btn-sm(href='../uploads/other/file_2kys85f91740et3rg6jduwh.jpg' target='_blank')
+                    i.fa.fa-eye
+                    |  View
+                  a.btn.btn-danger.btn-sm(href='?delete-id=6')
+                    i.fa.fa-trash
+                    |  Delete
+      .row
+        .col-sm-12.col-md-7
+            ul.pagination
+              li.page-item
+                a.page-link(href='#')
+                  i.fa.fa-angle-left
+              li.page-item.active
+                a.page-link(href='#') 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#')
+                  i.fa.fa-angle-right
+
+
+block scripts 

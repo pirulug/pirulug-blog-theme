@@ -1,0 +1,169 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Dashboard'
+  -pageUrl = 'dash_dashboard'
+
+block content
+  .card
+    h6.card-header Shortcuts
+    .card-body
+      center
+        a.btn.btn-primary(href='add_post.php')
+          i.fa.fa-edit
+          br
+          | Write Post
+        a.btn.btn-primary(href='settings.php')
+          i.fa.fa-cogs
+          br
+          |  Settings
+        a.btn.btn-primary(href='messages.php')
+          i.fa.fa-envelope
+          br
+          |  Messages
+        a.btn.btn-primary(href='menu_editor.php')
+          i.fa.fa-bars
+          br
+          |  Menu Editor
+        a.btn.btn-primary(href='add_page.php')
+          i.fa.fa-file-alt
+          br
+          |  Add Page
+        a.btn.btn-primary(href='add_image.php')
+          i.fa.fa-camera-retro
+          br
+          |  Add Image
+        a.btn.btn-primary(href='widgets.php')
+          i.fa.fa-archive
+          br
+          |  Widgets
+        a.btn.btn-primary(href='upload_file.php')
+          i.fa.fa-upload
+          br
+          |  Upload File
+        a.btn.btn-primary(href='../index.php' target='_blank')
+          i.fa.fa-eye
+          br
+          |  View Site
+  
+  .row.mt-3
+    .col-md-6.column
+      .card
+        h6.card-header Statistics
+        .card-body
+          ul.list-group
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='posts.php')
+                i.fa.fa-list
+                |  Posts
+              span.badge.bg-primary.rounded-pill
+                | 2
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='categories.php')
+                i.fa.fa-list-ol
+                |  Categories
+              span.badge.bg-primary.rounded-pill
+                | 5
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='comments.php')
+                i.fa.fa-comments
+                |  Comments
+              span.badge.bg-primary.rounded-pill
+                | 9
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='gallery.php')
+                i.fa.fa-image
+                |  Images
+              span.badge.bg-primary.rounded-pill
+                | 2
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='pages.php')
+                i.fa.fa-file-alt
+                |  Pages
+              span.badge.bg-primary.rounded-pill
+                | 1
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='widgets.php')
+                i.fa.fa-archive
+                |  Widgets
+              span.badge.bg-primary.rounded-pill
+                | 1
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='files.php')
+                i.fa.fa-folder-open
+                |  Files
+              span.badge.bg-primary.rounded-pill
+                | 15
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='messages.php')
+                i.fa.fa-envelope
+                |  Messages
+              span.badge.bg-primary.rounded-pill
+                | 0
+            li.list-group-item.d-flex.justify-content-between.align-items-start
+              a(href='users.php')
+                i.fa.fa-users
+                |  Users
+              span.badge.bg-primary.rounded-pill
+                | 1
+    .col-md-6.column
+      .card
+        h6.card-header Recent Comments
+        .card-container-toggle
+          .card-body
+            .row
+              .col-md-2
+                img.img-fluid(src='https://dummyimage.com/50x50/d63384/fff.jpg')
+              .col-md-10
+                a(href='comments.php?edit-id=9')
+                  span.blue
+                    | Comment by 
+                    strong admin 
+                    |  on 
+                    strong 28.02.2023, 02:53
+                br
+                strong Status:
+                span.badge.bg-success Approved
+                p zxc
+              .col-md-2
+                img.img-fluid(src='https://dummyimage.com/50x50/d63384/fff.jpg')
+              .col-md-10
+                a(href='comments.php?edit-id=8')
+                  span.blue
+                    | Comment by 
+                    strong admin 
+                    |  on 
+                    strong 28.02.2023, 02:53
+                br
+                strong Status:
+                span.badge.bg-success Approved
+                p zxc
+              .col-md-2
+                img.img-fluid(src='https://dummyimage.com/50x50/d63384/fff.jpg')
+              .col-md-10
+                a(href='comments.php?edit-id=7')
+                  span.blue
+                    | Comment by 
+                    strong admin 
+                    |  on 
+                    strong 28.02.2023, 02:53
+                br
+                strong Status:
+                span.badge.bg-success Approved
+                p zxc
+              .col-md-2
+                img.img-fluid(src='https://dummyimage.com/50x50/d63384/fff.jpg')
+              .col-md-10
+                a(href='comments.php?edit-id=6')
+                  span.blue
+                    | Comment by 
+                    strong admin 
+                    |  on 
+                    strong 28.02.2023, 02:53
+                br
+                strong Status:
+                span.badge.bg-success Approved
+                p zxc
+
+
+block scripts 

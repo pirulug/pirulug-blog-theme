@@ -1,0 +1,65 @@
+extends ../layouts/blog
+
+append config
+  -pageName = 'Indes'
+  -pageUrl = 'indes'
+
+block aside
+  include ../includes/blog-aside
+
+block content
+  .card
+    .card-header
+      i.far.fa-file-alt
+      |  Articles
+    .card-body
+      .card.shadow-sm
+        a(href='post.php?id=2')
+          img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' alt='asd' style='width: 100%; height: 225px;')
+        .card-body
+          a(href='post.php?id=2')
+            h5.card-title asd
+          .d-flex.justify-content-between.align-items-center
+            a(href='category.php?id=1')
+              span.badge.bg-primary Site News
+            small
+              i.fas.fa-comments
+              |  Comments: 
+              a.blog-comments(href='post.php?id=2#comments')
+                b 6
+          p.card-text
+            | Fatal error: Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near
+          .d-flex.justify-content-between.align-items-center
+            b
+              i.fas.fa-user-edit
+              |  admin
+            small.text-muted
+              i.far.fa-calendar-alt
+              |  28.02.2023, 02:51
+      br
+      .card.shadow-sm
+        a(href='post.php?id=1')
+          img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' alt='Titulo 1' style='width: 100%; height: 225px;')
+        .card-body
+          a(href='post.php?id=1')
+            h5.card-title Titulo 1
+          .d-flex.justify-content-between.align-items-center
+            a(href='category.php?id=3')
+              span.badge.bg-primary Html
+            small
+              i.fas.fa-comments
+              |  Comments: 
+              a.blog-comments(href='post.php?id=1#comments')
+                b 3
+          p.card-text
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem tempor massa volutpat, quis varius urna placerat. Aliquam erat volutpat. Suspendisse lorem odio, imperdiet ut elit vitae, dignissim pretium odio. Pellentesque ac rutrum lacus. Proin nec nunc quis enim suscipit scelerisque ut eu velit. Sed eu lobortis lorem. Quisque ac dolor mattis, malesuada metus id, accumsan lorem. ...
+          .d-flex.justify-content-between.align-items-center
+            b
+              i.fas.fa-user-edit
+              |  admin
+            small.text-muted
+              i.far.fa-calendar-alt
+              |  28.02.2023, 02:52
+      br
+      center
+        a.btn.btn-primary(href='?page=1') 1

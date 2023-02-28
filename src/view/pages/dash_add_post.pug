@@ -1,0 +1,45 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Post'
+  -pageUrl = 'dash_add_post'
+
+block content
+  .card
+    h6.card-header Add Post
+    .card-body
+      form(action='' method='post' enctype='multipart/form-data')
+        p
+          label Title
+          input.form-control(name='title' value='' type='text' required='')
+        p
+          label Image
+          input.form-control(type='file' name='image')
+        p
+          label Active
+          br
+          select.form-select(name='active' required='')
+            option(value='Yes' selected='') Yes
+            option(value='No') No
+        p
+          label Featured
+          br
+          select.form-select(name='featured' required='')
+            option(value='Yes') Yes
+            option(value='No' selected='') No
+        p
+          label Category
+          br
+          select.form-select(name='category_id' required='')
+            option(value='1') Site News
+            option(value='2') Php
+            option(value='3') Html
+            option(value='4') Css
+            option(value='5') Js
+        p
+          label Content
+          textarea.form-control
+        input.btn.btn-primary.col-12(type='submit' name='add' value='Add')
+
+
+block scripts 

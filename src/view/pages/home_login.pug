@@ -1,0 +1,57 @@
+extends ../layouts/blog
+
+append config
+  -pageName = 'Indes'
+  -pageUrl = 'indes'
+
+block aside
+  include ../includes/blog-aside
+
+block content
+  .card
+    .card-header
+      i.fas.fa-user-plus
+      |  Membership
+    .card-body
+      .row
+        .col-md-6
+          h5
+            i.fas.fa-user-plus
+            |  Registration
+          hr
+          form(action='' method='post')
+            .input-group.mb-3.needs-validation
+              span.input-group-text
+                i.fas.fa-user
+              input.form-control(type='username' name='username' placeholder='Username' required='')
+            .input-group.mb-3.needs-validation
+              span.input-group-text
+                i.fas.fa-envelope
+              input.form-control(type='email' name='email' placeholder='E-Mail Address' required='')
+            .input-group.mb-3.needs-validation
+              span.input-group-text
+                i.fas.fa-key
+              input.form-control(type='password' name='password' placeholder='Password' required='')
+            center
+              .g-recaptcha(data-sitekey='')
+            br
+            button.btn.btn-primary.col-12(type='submit' name='register')
+              i.fas.fa-sign-in-alt
+              |               &nbsp;Sign Up
+        .col-md-6
+          h5
+            i.fas.fa-sign-in-alt
+            |  Sign In
+          hr
+          form(action='' method='post')
+            .input-group.mb-3.needs-validation
+              span.input-group-text
+                i.fas.fa-user
+              input.form-control(type='username' name='username' placeholder='Username' required='')
+            .input-group.mb-3.needs-validation
+              span.input-group-text
+                i.fas.fa-key
+              input.form-control(type='password' name='password' placeholder='Password' required='')
+            button.btn.btn-primary.col-12(type='submit' name='signin')
+              i.fas.fa-sign-in-alt
+              |               &nbsp;Sign In

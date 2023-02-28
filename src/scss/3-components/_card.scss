@@ -1,0 +1,8 @@
+.card {
+  @extend .mb-3;
+}
+
+.card-img-top {
+  border-top-right-radius: var(--bs-card-border-radius);
+  border-top-left-radius: var(--bs-card-border-radius);
+}

@@ -1,0 +1,58 @@
+extends ../layouts/blog
+
+append config
+  -pageName = 'Indes'
+  -pageUrl = 'indes'
+
+block aside
+  include ../includes/blog-aside
+
+block content
+  .card
+    .card-header
+      i.fa.fa-images
+      |  Gallery
+    .card-body
+      .row
+        .col-md-4.mb-3(data-bs-toggle='modal' data-bs-target='#p2')
+          .card.shadow-sm
+            img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' alt='zxc' style='width: 100%; height: 180px;')
+            .card-body
+              h6.card-title zxc
+              .d-flex.justify-content-between.align-items-center
+                button.btn.btn-sm.btn-outline-secondary.col-12(type='button' data-bs-toggle='modal' data-bs-target='#p2')
+                  i.fas.fa-info-circle
+                  |  Details
+        #p2.modal(tabindex='-1' role='dialog')
+          .modal-dialog.modal-lg
+            .modal-content
+              .modal-header
+                h5.modal-title zxc
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' width='100%' height='auto' alt='zxc')
+                br
+                br
+                p zxc
+        .col-md-4.mb-3(data-bs-toggle='modal' data-bs-target='#p1')
+          .card.shadow-sm
+            img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' alt='1' style='width: 100%; height: 180px;')
+            .card-body
+              h6.card-title 1
+              .d-flex.justify-content-between.align-items-center
+                button.btn.btn-sm.btn-outline-secondary.col-12(type='button' data-bs-toggle='modal' data-bs-target='#p1')
+                  i.fas.fa-info-circle
+                  |  Details
+        #p1.modal(tabindex='-1' role='dialog')
+          .modal-dialog.modal-lg
+            .modal-content
+              .modal-header
+                h5.modal-title 1
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' width='100%' height='auto' alt='1')
+                br
+                br
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem tempor massa volutpat, quis varius urna placerat. Aliquam erat volutpat. Suspendisse lorem odio, imperdiet ut elit vitae, dignissim pretium odio. Pellentesque ac rutrum lacus. Proin nec nunc quis enim suscipit scelerisque ut eu velit. Sed eu lobortis lorem. Quisque ac dolor mattis, malesuada metus id, accumsan lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+

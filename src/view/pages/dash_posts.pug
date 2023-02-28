@@ -1,0 +1,80 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Post'
+  -pageUrl = 'dash_posts'
+
+block content
+  .card
+    h6.card-header Posts
+    .card-body
+      a.btn.btn-primary.col-12(href='dash_add_post.html')
+        i.fa.fa-edit
+        |  Add Post
+      br
+      br
+      .dataTables_wrapper
+
+        .row
+          .col-sm-12
+            table.table.table-border.table-hover
+              thead
+                tr
+                  th Image
+                  th Title
+                  th Author
+                  th Date
+                  th Active
+                  th Category
+                  th Actions
+              tbody
+                tr
+                  td
+                    center
+                      img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' width='45px' height='45px')
+                  td
+                    | Titulo 1 
+                    span.badge.bg-primary Featured
+                  td admin
+                  td.sorting_1 28.02.2023, 02:52
+                  td Yes
+                  td Html
+                  td
+                    a.btn.btn-primary.btn-sm(href='?edit-id=1')
+                      i.fa.fa-edit
+                      |  Edit
+                    a.btn.btn-danger.btn-sm(href='?delete-id=1')
+                      i.fa.fa-trash
+                      |  Delete
+                tr
+                  td
+                    center
+                      img(src='https://dummyimage.com/850x350/dee2e6/6c757d.jpg' width='45px' height='45px')
+                  td
+                    | asd 
+                    span.badge.bg-primary Featured
+                  td admin
+                  td.sorting_1 28.02.2023, 02:51
+                  td Yes
+                  td Site News
+                  td
+                    a.btn.btn-primary.btn-sm(href='?edit-id=2')
+                      i.fa.fa-edit
+                      |  Edit
+                    a.btn.btn-danger.btn-sm(href='?delete-id=2')
+                      i.fa.fa-trash
+                      |  Delete
+        .row
+          
+          ul.pagination
+            li#dt-basic_previous.paginate_button.page-item.previous.disabled
+              a.page-link(href='#' aria-controls='dt-basic' data-dt-idx='0' tabindex='0')
+                i.fa.fa-angle-left
+            li.paginate_button.page-item.active
+              a.page-link(href='#' aria-controls='dt-basic' data-dt-idx='1' tabindex='0') 1
+            li#dt-basic_next.paginate_button.page-item.next.disabled
+              a.page-link(href='#' aria-controls='dt-basic' data-dt-idx='2' tabindex='0')
+                i.fa.fa-angle-right
+
+
+block scripts 

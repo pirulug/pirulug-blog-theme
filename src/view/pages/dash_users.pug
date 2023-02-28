@@ -1,0 +1,50 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Users'
+  -pageUrl = 'dash_users'
+
+block content
+  .card
+    h6.card-header Users
+    .card-body
+          
+      table.table.table-border.table-hover
+        thead
+          tr
+            th Username
+            th E-Mail
+            th Role
+            th Actions
+        tbody
+          tr
+            td(tabindex='0')
+              img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='40px' height='40px')
+              |  admin
+            td admin@gmail.com
+            td
+              h6
+                span.badge.bg-danger Admin
+            td
+              a.btn.btn-primary.btn-sm(href='?edit-id=2')
+                i.fa.fa-edit
+                |  Edit
+              a.btn.btn-danger.btn-sm(href='?delete-id=2')
+                i.fa.fa-trash
+                |  Delete
+      nav
+        ul.pagination
+          li.page-item
+            a.page-link(href='#') 
+              i.fa.fa-angle-left
+          li.page-item
+            a.page-link.active(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') 
+              i.fa.fa-angle-right
+
+block scripts 

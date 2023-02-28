@@ -1,0 +1,46 @@
+block config
+
+// Responsive navbar
+nav.navbar.navbar-expand-lg.bg-body
+  .container.justify-content-center
+    .d-lg-none.navbar-brand Menu
+
+    #navbar-main.collapse.navbar-collapse.justify-content-between
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.active(href='index.html') Home
+        li.nav-item
+          a.nav-link(href='dash_dashboard.html') Dashboard
+        li.nav-item
+          a.nav-link(href='home_login.html') Login
+        li.nav-item
+          a.nav-link(href='home_post.html') Post
+        li.nav-item
+          a.nav-link(href='home_gallery.html') Gallery
+        li.nav-item
+          a.nav-link(href='home_blog.html') Articles
+        li.nav-item
+          a.nav-link(href='home_contact.html') Contact
+
+      ul.navbar-nav  
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown')
+            img.avatar.img-fluid.rounded.me-1(src='https://dummyimage.com/50x50/d63384/fff.jpg' alt='Charles Hall')
+            span Charles Hall
+          .dropdown-menu.dropdown-menu-end
+            a.dropdown-item(href='pages-profile.html')
+              i.align-middle.me-1(data-feather='user')
+              |  Profile
+            a.dropdown-item(href='#')
+              i.align-middle.me-1(data-feather='pie-chart')
+              |  Analytics
+            .dropdown-divider
+            a.dropdown-item(href='pages-settings.html')
+              i.align-middle.me-1(data-feather='settings')
+              |  Settings &amp; Privacy
+            a.dropdown-item(href='#')
+              i.align-middle.me-1(data-feather='help-circle')
+              |  Help Center
+            .dropdown-divider
+            a.dropdown-item(href='#') Log out
+

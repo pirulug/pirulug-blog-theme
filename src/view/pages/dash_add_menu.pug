@@ -1,0 +1,25 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Menu'
+  -pageUrl = 'dash_menu_editor'
+
+block content
+  .card
+    h6.card-header Add Menu
+    .card-body
+      form(action='' method='post')
+        p
+          label Title
+          input.form-control(name='page' value='' type='text' required='')
+        p
+          label Path (Link)
+          input.form-control(name='path' value='' type='text' required='')
+        p
+          label Font Awesome Icon
+          input.form-control(name='fa_icon' value='' type='text')
+        .form-actions
+          input.btn.btn-primary.col-12(type='submit' name='add' value='Add')
+
+
+block scripts 

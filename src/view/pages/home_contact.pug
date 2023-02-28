@@ -1,0 +1,52 @@
+extends ../layouts/blog
+
+append config
+  -pageName = 'Indes'
+  -pageUrl = 'indes'
+
+block aside
+  include ../includes/blog-aside
+
+block content
+  .card
+    .card-header
+      i.fas.fa-envelope
+      |  Contact
+    .card-body
+      h5 Social Profiles
+      .list-group
+        a.list-group-item.list-group-item-action(href='mailto:admin@mail.com' target='_blank')
+          strong
+            i.fa.fa-envelope
+            span
+              | admin@mail.com
+        a.list-group-item.list-group-item-primary.list-group-item-action(href='https://www.facebook.com' target='_blank')
+          strong
+            i.fab.fa-facebook-square
+            | &nbsp; Facebook
+        a.list-group-item.list-group-item-warning.list-group-item-action(href='https://instagram.com' target='_blank')
+          strong
+            i.fab.fa-instagram
+            | &nbsp; Instagram
+        a.list-group-item.list-group-item-info.list-group-item-action(href='https://twitter.com' target='_blank')
+          strong
+            i.fab.fa-twitter-square
+            | &nbsp; Twitter
+        a.list-group-item.list-group-item-danger.list-group-item-action(href='https://www.youtube.com' target='_blank')
+          strong
+            i.fab.fa-youtube-square
+            | &nbsp; YouTube
+      br
+      hr
+      h5 Leave Your Message
+      form(method='post' action='')
+        label(for='input-message')
+          i.far.fa-file-alt
+          |  Your Message:
+        textarea#input-message.form-control(name='text' rows='8' required='')
+        br
+        center
+          .g-recaptcha(data-sitekey='')
+        br
+        input.btn.btn-primary.col-12(type='submit' name='send' value='Send')
+      br

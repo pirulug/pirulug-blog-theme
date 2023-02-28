@@ -1,0 +1,161 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Comments'
+  -pageUrl = 'dash_comments'
+
+block content
+  .card
+    h6.card-header Comments
+    .card-body
+
+      .row
+        .col-sm-12
+          table.table.table-border.table-hover
+            thead
+              tr
+                th Author
+                th Date
+                th Approved
+                th Post
+                th Actions
+            tbody
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:53
+                td Yes
+                td asd
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=9' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=9')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:53
+                td Yes
+                td asd
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=8' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=8')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:53
+                td Yes
+                td asd
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=7' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=7')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:53
+                td Yes
+                td asd
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=6' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=6')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:53
+                td Yes
+                td asd
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=5' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=5')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:53
+                td Yes
+                td asd
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=4' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=4')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:49
+                td Yes
+                td Titulo 1
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=3' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=3')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:49
+                td Yes
+                td Titulo 1
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=2' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=2')
+                    i.fa.fa-trash
+                    |  Delete
+              tr
+                td
+                  img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='45px' height='45px')
+                  |  admin
+                td 28.02.2023, 02:49
+                td Yes
+                td Titulo 1
+                td
+                  a.btn.btn-primary.btn-sm(href='?edit-id=1' title='View / Edit')
+                    i.fa.fa-edit
+                    |  View / Edit
+                  a.btn.btn-danger.btn-sm(href='?delete-id=1')
+                    i.fa.fa-trash
+                    |  Delete
+      .row
+        ul.pagination
+          li.page-item
+            a.page-link
+              i.fa.fa-angle-left
+          li.page-item.active
+            a.page-link 1
+          li.page-item
+            a.page-link
+              i.fa.fa-angle-right
+
+
+block scripts 

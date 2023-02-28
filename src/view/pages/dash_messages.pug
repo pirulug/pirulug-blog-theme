@@ -1,0 +1,39 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Messages'
+  -pageUrl = 'dash_messages'
+
+block content
+  .card
+    h6.card-header Messages
+    .card-body
+      .table-responsive
+        table.table.table-hover
+          thead
+            tr
+              th Name
+              th E-Mail
+              th Date
+              th Viewed
+              th Actions
+          tbody
+            tr
+              td(colspan='5') No data available in table
+  
+      nav
+        ul.pagination
+          li.page-item
+            a.page-link(href='#') 
+              i.fa.fa-angle-left
+          li.page-item
+            a.page-link.active(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') 
+              i.fa.fa-angle-right
+
+block scripts 

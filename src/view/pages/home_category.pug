@@ -1,0 +1,42 @@
+extends ../layouts/blog
+
+append config
+  -pageName = 'Indes'
+  -pageUrl = 'indes'
+
+block aside
+  include ../includes/blog-aside
+  
+block content
+  .card
+    .card-header
+      i.far.fa-file-alt
+      |  Blog -
+      |       Site News
+    .card-body
+      .card.shadow-sm
+        a(href='post.php?id=2')
+          img(src='uploads/posts/image_k92h4j367twu0fdg1rys85e.jpg' alt='asd' style='width: 100%; height: 225px;')
+        .card-body
+          a(href='post.php?id=2')
+            h5.card-title asd
+          .d-flex.justify-content-between.align-items-center
+            a(href='category.php?id=1')
+              span.badge.bg-primary Site News
+            small
+              i.fas.fa-comments
+              |  Comments: 
+              a.blog-comments(href='post.php?id=2#comments')
+                b 6
+          p.card-text
+            | Fatal error: Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near
+          .d-flex.justify-content-between.align-items-center
+            b
+              i.fas.fa-user-edit
+              |  admin
+            small.text-muted
+              i.far.fa-calendar-alt
+              |  28.02.2023, 02:51
+      br
+      center
+        a.btn.btn-primary(href='?id=1&page=1') 1

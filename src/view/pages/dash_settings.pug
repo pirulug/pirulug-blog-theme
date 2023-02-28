@@ -1,0 +1,101 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Settings'
+  -pageUrl = 'dash_settings'
+
+block content
+  .card
+    h6.card-header Settings
+    .card-body
+      form(action='' method='post' enctype='multipart/form-data')
+        p
+          label Site Name
+          input.form-control(name='sitename' value='phpBlog' type='text' required='')
+        p
+          label Description
+          textarea.form-control(name='description' required='') Content Management System
+        p
+          label Website&apos;s E-Mail Address
+          input.form-control(name='email' type='email' value='admin@mail.com' required='')
+        p
+          label reCAPTCHA v2 Site Key:
+          input.form-control(name='gcaptcha-sitekey' value='' type='text' required='')
+        p
+          label reCAPTCHA v2 Secret Key:
+          input.form-control(name='gcaptcha-secretkey' value='' type='text' required='')
+        p
+          label Facebook Profile
+          input.form-control(name='facebook' type='url' value='https://www.facebook.com')
+        p
+          label Instagram Profile
+          input.form-control(name='instagram' type='url' value='https://instagram.com')
+        p
+          label Twitter Profile
+          input.form-control(name='twitter' type='url' value='https://twitter.com')
+        p
+          label Youtube Profile
+          input.form-control(name='youtube' type='url' value='https://www.youtube.com')
+        p
+          label RTL Content (Right-To-Left)
+          br
+          select.form-select(name='rtl' required='')
+            option(value='No' selected='') No
+            option(value='Yes') Yes
+        p
+          label Comments Section
+          br
+          select.form-select(name='comments' required='')
+            option(value='guests' selected='')
+              | Registration not required
+            option(value='registered')
+              | Registration
+              | required
+        p
+          label Date Format
+          br
+          select.form-select(name='date_format' required='')
+            option(value='d.m.Y' selected='') 28.02.2023
+            option(value='d F Y') 28 February 2023
+            option(value='F j, Y') February 28, 2023
+            option(value='Y-m-d') 2023-02-28
+            option(value='d/m/Y') 28/02/2023
+            option(value='m/d/Y') 02/28/2023
+        p
+          label Background Image
+          input#formFile.form-control(name='background_image' type='file')
+        p
+          label Theme
+          br
+          select.form-select(name='theme' required='')
+            option(value='Bootstrap 5' selected='') Bootstrap 5
+            option(value='Cerulean') Cerulean
+            option(value='Cosmo') Cosmo
+            option(value='Cyborg') Cyborg
+            option(value='Darkly') Darkly
+            option(value='Flatly') Flatly
+            option(value='Journal') Journal
+            option(value='Litera') Litera
+            option(value='Lumen') Lumen
+            option(value='Lux') Lux
+            option(value='Materia') Materia
+            option(value='Minty') Minty
+            option(value='Morph') Morph
+            option(value='Pulse') Pulse
+            option(value='Quartz') Quartz
+            option(value='Sandstone') Sandstone
+            option(value='Simplex') Simplex
+            option(value='Sketchy') Sketchy
+            option(value='Slate') Slate
+            option(value='Solar') Solar
+            option(value='Spacelab') Spacelab
+            option(value='Superhero') Superhero
+            option(value='United') United
+            option(value='Vapor') Vapor
+            option(value='Yeti') Yeti
+            option(value='Zephyr') Zephyr
+        .form-actions
+          input.btn.btn-success.col-12(type='submit' name='save' value='Save')
+
+
+block scripts 

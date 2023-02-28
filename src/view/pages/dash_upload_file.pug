@@ -1,0 +1,20 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Files'
+  -pageUrl = 'dash_files'
+
+block content
+  .card
+    h6.card-header Upload File
+    .card-body
+      form(action='' method='post' enctype='multipart/form-data')
+        p
+          label
+            b File
+          input.form-control(type='file' name='file' required='')
+        .form-actions
+          input.btn.btn-primary.col-12(type='submit' name='upload' value='Upload')
+
+
+block scripts 

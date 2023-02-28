@@ -1,0 +1,43 @@
+extends ../layouts/blog
+
+append config
+  -pageName = 'Indes'
+  -pageUrl = 'indes'
+
+block aside
+  include ../includes/blog-aside
+
+block content
+  .card
+    .card-header
+      i.fas.fa-cog
+      |  Profile Settings
+    .card-body
+      form(method='post' action='' enctype='multipart/form-data')
+        label(for='username')
+          i.fa.fa-user
+          |  Username:
+        input#username.form-control(type='text' name='username' value='admin' required='')
+        br
+        label(for='email')
+          i.fa.fa-envelope
+          |  E-Mail Address:
+        input#email.form-control(type='email' name='email' value='admin@gmail.com' required='')
+        br
+        label(for='avatar')
+          i.fa.fa-image
+          |  Avatar:
+        center
+          img(src='uploads/avatars/admin.png' width='12%')
+        .custom-file
+          input#avatarfile.form-control(type='file' name='avafile' accept='image/*')
+        br
+        br
+        label(for='name')
+          i.fa.fa-key
+          |  Password:
+        input#name.form-control(type='password' name='password' value='')
+        i Fill this field only if you want to change your password.
+        br
+        br
+        input.btn.btn-primary.col-12(type='submit' name='save' value='Save')

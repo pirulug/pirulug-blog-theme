@@ -1,0 +1,80 @@
+mixin header(title)
+  li.sidebar-header
+    | #{title}
+
+mixin item(title, url, icon)
+  li.sidebar-item(class=(pageUrl === url ? "active" : undefined))
+    a.sidebar-link(href=`${url}` + ".html")
+      i.align-middle(data-feather=`${icon}`)
+      span.align-middle #{title}
+
+mixin subItem(title, href, icon, id, pages)
+
+  - var isActive
+  each page in pages
+    if pageUrl === page
+      -isActive = "si"
+
+  li.sidebar-item(class=(isActive === "si" ? "active" : undefined))
+    a.sidebar-link(class=(isActive === "si" ? undefined : "collapsed") data-bs-target=`#${id}` data-bs-toggle='collapse')
+      i.align-middle(data-feather=`${icon}`)
+      span.align-middle #{title}
+    ul.sidebar-dropdown.list-unstyled.collapse(class=(isActive === "si" ? "show" : undefined) id=`${id}` data-bs-parent='#sidebar')    
+      block
+
+mixin subLink(title, url)
+  li.sidebar-item(class=(pageUrl === url ? "active" : undefined))
+    a.sidebar-link(href=`${url}` + ".html") #{title}
+
+
+nav#sidebar.sidebar.js-sidebar
+  .sidebar-content.js-simplebar
+    a.sidebar-brand(href='index.html')
+      span.align-middle #{siteName}
+    ul.sidebar-nav
+
+      +item("Dashboard", "dash_dashboard", "sliders")
+
+      +header('Post')
+
+      +subItem("Entradas", "#", "layout", "post", ["dash_add_post","dash_posts","dash_categories","dash_comments"]) 
+        +subLink("Add post", "dash_add_post")
+        +subLink("Post", "dash_posts")
+        +subLink("Categories", "dash_categories")
+        +subLink("Comments", "dash_comments")
+
+      +header('Medios')
+
+      +item("Files", "dash_files", "file")
+
+      +header('Pages')
+
+      +subItem("Pages", "#", "file", "pages", ["dash_add_page","dash_pages"]) 
+        +subLink("Add page", "dash_add_page")
+        +subLink("Pages", "dash_pages")
+      
+      +item("Messages", "dash_messages", "message-square")
+      +item("Users", "dash_users", "users")
+      +item("Subscribers", "dash_subscribers", "mail")
+     
+      +header('Gallery')
+      
+      +subItem("Gallery", "#", "grid", "gallery", ["dash_add_image","dash_gallery"]) 
+        +subLink("Add image", "dash_add_image")
+        +subLink("Gallery", "dash_gallery")
+      
+      +header('Widgets')
+      
+      +subItem("Widgets", "#", "layout", "widgets", ["dash_add_widget","dash_widgets"])  
+        +subLink("Add widgets", "dash_add_widget")
+        +subLink("Widgets", "dash_widgets")
+
+      +header('Settings')
+
+      +item("Menu", "dash_menu_editor", "list")
+      +item("Settings", "dash_settings", "settings")
+
+      //- +subItem("Pages", "#", "file", "pages", ["pages-settings","pages-blank"])        
+        +subLink("Settings", "pages-settings")
+        +subLink("Blank Page", "pages-blank")
+

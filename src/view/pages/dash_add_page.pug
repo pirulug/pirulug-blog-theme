@@ -1,0 +1,21 @@
+extends ../layouts/dashboard
+
+append config
+  -pageName = 'Pages'
+  -pageUrl = 'dash_add_page'
+
+block content
+  .card
+    h6.card-header Add Page
+    .card-body
+      form(action='' method='post')
+        p
+          label Title
+          input.form-control(name='title' value='' type='text' required='')
+        p
+          label Content
+          textarea.form-control
+        input.btn.btn-primary.col-12(type='submit' name='add' value='Add')
+
+
+block scripts 
