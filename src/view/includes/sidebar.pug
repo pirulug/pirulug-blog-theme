@@ -35,7 +35,7 @@ nav#sidebar.sidebar.js-sidebar
 
       +item("Dashboard", "dash_dashboard", "sliders")
 
-      +header('Post')
+      //- +header('Post')
 
       +subItem("Entradas", "#", "layout", "post", ["dash_add_post","dash_posts","dash_categories","dash_comments"]) 
         +subLink("Add post", "dash_add_post")
@@ -43,38 +43,37 @@ nav#sidebar.sidebar.js-sidebar
         +subLink("Categories", "dash_categories")
         +subLink("Comments", "dash_comments")
 
-      +header('Medios')
+      //- +header('Medios')
 
       +item("Files", "dash_files", "file")
 
-      +header('Pages')
+      //- +header('Pages')
 
       +subItem("Pages", "#", "file", "pages", ["dash_add_page","dash_pages"]) 
         +subLink("Add page", "dash_add_page")
         +subLink("Pages", "dash_pages")
-      
+
       +item("Messages", "dash_messages", "message-square")
-      +item("Users", "dash_users", "users")
+
+      
       +item("Subscribers", "dash_subscribers", "mail")
      
-      +header('Gallery')
+      //- +header('Gallery')
       
       +subItem("Gallery", "#", "grid", "gallery", ["dash_add_image","dash_gallery"]) 
         +subLink("Add image", "dash_add_image")
         +subLink("Gallery", "dash_gallery")
       
-      +header('Widgets')
+      //- +header('Widgets')
       
       +subItem("Widgets", "#", "layout", "widgets", ["dash_add_widget","dash_widgets"])  
         +subLink("Add widgets", "dash_add_widget")
         +subLink("Widgets", "dash_widgets")
 
-      +header('Settings')
+      //- +header('Settings')
 
       +item("Menu", "dash_menu_editor", "list")
+
+      +item("Users", "dash_users", "users")
+
       +item("Settings", "dash_settings", "settings")
-
-      //- +subItem("Pages", "#", "file", "pages", ["pages-settings","pages-blank"])        
-        +subLink("Settings", "pages-settings")
-        +subLink("Blank Page", "pages-blank")
-

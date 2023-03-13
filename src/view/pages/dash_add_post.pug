@@ -9,35 +9,35 @@ block content
     h6.card-header Add Post
     .card-body
       form(action='' method='post' enctype='multipart/form-data')
-        p
-          label Title
+        .mb-3
+          label.form-label Title
           input.form-control(name='title' value='' type='text' required='')
-        p
-          label Image
+        .mb-3
+          label.form-label Image
           input.form-control(type='file' name='image')
-        p
-          label Active
-          br
+        .mb-3
+          label.form-label Active
+          
           select.form-select(name='active' required='')
             option(value='Yes' selected='') Yes
             option(value='No') No
-        p
-          label Featured
-          br
+        .mb-3
+          label.form-label Featured
+          
           select.form-select(name='featured' required='')
             option(value='Yes') Yes
             option(value='No' selected='') No
-        p
-          label Category
-          br
+        .mb-3
+          label.form-label Category
+          
           select.form-select(name='category_id' required='')
             option(value='1') Site News
             option(value='2') Php
             option(value='3') Html
             option(value='4') Css
             option(value='5') Js
-        p
-          label Content
+        .mb-3
+          label.form-label Content
           textarea.form-control
         input.btn.btn-primary.col-12(type='submit' name='add' value='Add')
 

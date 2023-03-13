@@ -6,14 +6,18 @@ append config
 
 block content
   .card
-    h6.card-header Add Widget
+    .card-header 
+      h5.card-title Add Widget
     .card-body
       form(action='' method='post')
-        p
-          label Title
+        .mb-3
+          label.form-label Title
           input.form-control(name='title' value='' type='text' required='')
-        p
-          label Content
-          textarea.form-control.ckeditor
+        .mb-3
+          label.form-label Content
+          textarea.form-control
+
+      .d-grid
+        button.btn.btn-primary guardar
 
 block scripts 

@@ -6,23 +6,26 @@ append config
 
 block content
   .card
-    h6.card-header Add Image
+    .card-header 
+      h5.card-title Add Image
     .card-body
       form(action='' method='post' enctype='multipart/form-data')
-        p
-          label Title
+        .mb-3
+          label.form-label Title
           input.form-control(name='title' value='' type='text' required='')
-        p
-          label Image
+        .mb-3
+          label.form-label Image
           input.form-control(type='file' name='avafile' required='')
-        p
-          label Active
+        .mb-3
+          label.form-label Active
           br
           select.form-select(name='active' required='')
             option(value='Yes' selected='') Yes
             option(value='No') No
-        p
-          label Description
+        .mb-3
+          label.form-label Description
           textarea.form-control
 
-block scripts 
+        .d-grid.gap-2
+          button.btn.btn-primary Guardar
+          

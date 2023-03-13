@@ -6,34 +6,35 @@ append config
 
 block content
   .card
-    h6.card-header Users
+    .card-header 
+      h5.card-title Users
     .card-body
-          
-      table.table.table-border.table-hover
-        thead
-          tr
-            th Username
-            th E-Mail
-            th Role
-            th Actions
-        tbody
-          tr
-            td(tabindex='0')
-              img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='40px' height='40px')
-              |  admin
-            td admin@gmail.com
-            td
-              h6
-                span.badge.bg-danger Admin
-            td
-              a.btn.btn-primary.btn-sm(href='?edit-id=2')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=2')
-                i.fa.fa-trash
-                |  Delete
+      .table-responsive
+        table.table.table-border.table-hover.align-middle
+          thead
+            tr
+              th Username
+              th E-Mail
+              th Role
+              th Actions
+          tbody
+            tr
+              td(tabindex='0')
+                img(src='https://dummyimage.com/50x50/d63384/fff.jpg' width='40px' height='40px')
+                |  admin
+              td admin@gmail.com
+              td
+                h6
+                  span.badge.bg-danger Admin
+              td
+                a.btn.btn-primary.btn-sm(href='?edit-id=2')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=2')
+                  i.fa.fa-trash
+                  |  Delete
       nav
-        ul.pagination
+        ul.pagination.justify-content-center
           li.page-item
             a.page-link(href='#') 
               i.fa.fa-angle-left

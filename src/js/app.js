@@ -9,13 +9,13 @@ import "./modulos/darkLigthMode";
 import "./modulos/sidebar";
 
 // ChartJs
-import "./modulos/chartjs";
+// import "./modulos/chartjs";
 
 // FeatherIcons
 import "./modulos/feathericons";
 
 // Forms
-import "./modulos/flatpickr";
+// import "./modulos/flatpickr";
 
 // Maps
-import "./modulos/vector-maps";
+// import "./modulos/vector-maps";

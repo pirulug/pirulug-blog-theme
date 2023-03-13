@@ -8,100 +8,98 @@ block content
   .card
     h6.card-header Menu Editor
     .card-body
-      a.btn.btn-primary.col-12(href='dash_add_menu.html')
-        i.fa.fa-edit
-        |  Add Menu
-      br
-      br
-      table.table.table-border.table-hover
-        thead
-          tr
-            th Order
-            th Page
-            th Path
-            th Actions
-        tbody
-          tr
-            td 1
-            td
-              i.fa.fa-home
-              |  Home
-            td index.php
-            td
-              a.btn.btn-secondary.btn-sm(href='?down-id=1' title='Move Down')
-                i.fa.fa-arrow-down
-              a.btn.btn-primary.btn-sm(href='?edit-id=1')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=1')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td 2
-            td
-              i.fa.fa-info-circle
-              |  About
-            td page.php?id=1
-            td
-              a.btn.btn-secondary.btn-sm(href='?up-id=2' title='Move Up')
-                i.fa.fa-arrow-up
-              a.btn.btn-secondary.btn-sm(href='?down-id=2' title='Move Down')
-                i.fa.fa-arrow-down
-              a.btn.btn-primary.btn-sm(href='?edit-id=2')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=2')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td 3
-            td
-              i.fa.fa-images
-              |  Gallery
-            td gallery.php
-            td
-              a.btn.btn-secondary.btn-sm(href='?up-id=3' title='Move Up')
-                i.fa.fa-arrow-up
-              a.btn.btn-secondary.btn-sm(href='?down-id=3' title='Move Down')
-                i.fa.fa-arrow-down
-              a.btn.btn-primary.btn-sm(href='?edit-id=3')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=3')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td 4
-            td
-              i.fa.fa-list
-              |  Articles
-            td blog.php
-            td
-              a.btn.btn-secondary.btn-sm(href='?up-id=4' title='Move Up')
-                i.fa.fa-arrow-up
-              a.btn.btn-secondary.btn-sm(href='?down-id=4' title='Move Down')
-                i.fa.fa-arrow-down
-              a.btn.btn-primary.btn-sm(href='?edit-id=4')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=4')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td 5
-            td
-              i.fa.fa-envelope
-              |  Contact
-            td contact.php
-            td
-              a.btn.btn-secondary.btn-sm(href='?up-id=5' title='Move Up')
-                i.fa.fa-arrow-up
-              a.btn.btn-primary.btn-sm(href='?edit-id=5')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=5')
-                i.fa.fa-trash
-                |  Delete
-
-
-block scripts 
+      .d-grid
+        a.btn.btn-primary(href='dash_add_menu.html')
+          i.fa.fa-edit
+          |  Add Menu
+        
+      .table-responsive.mt-3
+        table.table.table-border.table-hover.align-middle
+          thead
+            tr
+              th Order
+              th Page
+              th Path
+              th Actions
+          tbody
+            tr
+              td 1
+              td
+                i.fa.fa-home
+                |  Home
+              td index.php
+              td
+                a.btn.btn-secondary.btn-sm(href='?down-id=1' title='Move Down')
+                  i.fa.fa-arrow-down
+                a.btn.btn-primary.btn-sm(href='?edit-id=1')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=1')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td 2
+              td
+                i.fa.fa-info-circle
+                |  About
+              td page.php?id=1
+              td
+                a.btn.btn-secondary.btn-sm(href='?up-id=2' title='Move Up')
+                  i.fa.fa-arrow-up
+                a.btn.btn-secondary.btn-sm(href='?down-id=2' title='Move Down')
+                  i.fa.fa-arrow-down
+                a.btn.btn-primary.btn-sm(href='?edit-id=2')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=2')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td 3
+              td
+                i.fa.fa-images
+                |  Gallery
+              td gallery.php
+              td
+                a.btn.btn-secondary.btn-sm(href='?up-id=3' title='Move Up')
+                  i.fa.fa-arrow-up
+                a.btn.btn-secondary.btn-sm(href='?down-id=3' title='Move Down')
+                  i.fa.fa-arrow-down
+                a.btn.btn-primary.btn-sm(href='?edit-id=3')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=3')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td 4
+              td
+                i.fa.fa-list
+                |  Articles
+              td blog.php
+              td
+                a.btn.btn-secondary.btn-sm(href='?up-id=4' title='Move Up')
+                  i.fa.fa-arrow-up
+                a.btn.btn-secondary.btn-sm(href='?down-id=4' title='Move Down')
+                  i.fa.fa-arrow-down
+                a.btn.btn-primary.btn-sm(href='?edit-id=4')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=4')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td 5
+              td
+                i.fa.fa-envelope
+                |  Contact
+              td contact.php
+              td
+                a.btn.btn-secondary.btn-sm(href='?up-id=5' title='Move Up')
+                  i.fa.fa-arrow-up
+                a.btn.btn-primary.btn-sm(href='?edit-id=5')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=5')
+                  i.fa.fa-trash
+                  |  Delete

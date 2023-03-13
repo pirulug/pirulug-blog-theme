@@ -9,11 +9,10 @@ block content
     h6.card-header Add Category
     .card-body
       form(action='' method='post')
-        p
-          label Title
+        .mb-3
+          label.form-label Title
           input.form-control(name='category' value='' type='text' required='')
-        .form-actions
-          input.btn.btn-primary.col-12(type='submit' name='add' value='Add')
+        
+        input.btn.btn-primary.col-12(type='submit' name='add' value='Add')
 
-
-block scripts 
+block scripts

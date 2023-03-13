@@ -6,30 +6,26 @@ append config
 
 block content
   .card
-    h6.card-header Pages
+    .card-header 
+      h6.card-title Pages
     .card-body
       a.btn.btn-primary.col-12(href='dash_add_page.html')
         i.fa.fa-edit
         |  Add Page
-      br
-      br
 
-        
-      table.table.table-border.table-hover
-        thead
-          tr
-            th Title
-            th Actions
-        tbody
-          tr
-            td About
-            td
-              a.btn.btn-primary.btn-sm(href='?edit-id=1')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=1')
-                i.fa.fa-trash
-                |  Delete
-
-
-block scripts 
+      .table-responsive
+        table.table.table-border.table-hover.align-middle
+          thead
+            tr
+              th Title
+              th Actions
+          tbody
+            tr
+              td About
+              td
+                a.btn.btn-primary.btn-sm(href='?edit-id=1')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=1')
+                  i.fa.fa-trash
+                  |  Delete

@@ -11,59 +11,74 @@ block content
       a.btn.btn-primary.col-12(href='dash_add_category.html')
         i.fa.fa-edit
         |  Add Category
-      br
-      br
-      table.table.table-border.table-hover
-        thead
-          tr
-            th Category
-            th Actions
-        tbody
-          tr
-            td Css
-            td
-              a.btn.btn-primary.btn-sm(href='?edit-id=4')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=4')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td Html
-            td
-              a.btn.btn-primary.btn-sm(href='?edit-id=3')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=3')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td Js
-            td
-              a.btn.btn-primary.btn-sm(href='?edit-id=5')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=5')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td Php
-            td
-              a.btn.btn-primary.btn-sm(href='?edit-id=2')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=2')
-                i.fa.fa-trash
-                |  Delete
-          tr
-            td Site News
-            td
-              a.btn.btn-primary.btn-sm(href='?edit-id=1')
-                i.fa.fa-edit
-                |  Edit
-              a.btn.btn-danger.btn-sm(href='?delete-id=1')
-                i.fa.fa-trash
-                |  Delete
+
+      .table-responsive
+        table.table.table-border.table-hover.align-middle
+          thead
+            tr
+              th Category
+              th Actions
+          tbody
+            tr
+              td Css
+              td
+                a.btn.btn-primary.btn-sm(href='?edit-id=4')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=4')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td Html
+              td
+                a.btn.btn-primary.btn-sm(href='?edit-id=3')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=3')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td Js
+              td
+                a.btn.btn-primary.btn-sm(href='?edit-id=5')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=5')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td Php
+              td
+                a.btn.btn-primary.btn-sm(href='?edit-id=2')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=2')
+                  i.fa.fa-trash
+                  |  Delete
+            tr
+              td Site News
+              td
+                a.btn.btn-primary.btn-sm(href='?edit-id=1')
+                  i.fa.fa-edit
+                  |  Edit
+                a.btn.btn-danger.btn-sm(href='?delete-id=1')
+                  i.fa.fa-trash
+                  |  Delete
+
+      nav(aria-label='Page navigation example')
+        ul.pagination.justify-content-center
+          li.page-item
+            a.page-link(href='#')
+              i.fa.fa-angle-left
+          li.page-item
+            a.page-link.active(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#')
+              i.fa.fa-angle-right    
 
 
 block scripts 
