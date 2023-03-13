@@ -334,7 +334,7 @@
 								</a>
 								<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
 									<img class="avatar img-fluid rounded me-1" src="https://dummyimage.com/50x50/d63384/fff.jpg" alt="Charles Hall">
-									<span>Charles Hall</span>
+									<span>Pirulug</span>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a class="dropdown-item" href="pages-profile.html">
@@ -364,56 +364,56 @@
 						<h1 class="h3 d-inline align-middle">Settings</h1>
 					</div>
 					<div class="card">
-						<h6 class="card-header">Settings</h6>
+						<div class="card-header">
+							<h5 class="card-title">Settings</h5>
+						</div>
 						<div class="card-body">
 							<form action="" method="post" enctype="multipart/form-data">
-								<p>
-									<label>Site Name</label>
+								<div class="mb-3">
+									<label class="form-label">Site Name</label>
 									<input class="form-control" name="sitename" value="phpBlog" type="text" required="">
-								</p>
-								<p>
-									<label>Description</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Description</label>
 									<textarea class="form-control" name="description" required="">Content Management System</textarea>
-								</p>
-								<p>
-									<label>Website&apos;s E-Mail Address</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Website&apos;s E-Mail Address</label>
 									<input class="form-control" name="email" type="email" value="admin@mail.com" required="">
-								</p>
-								<p>
-									<label>reCAPTCHA v2 Site Key:</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">reCAPTCHA v2 Site Key:</label>
 									<input class="form-control" name="gcaptcha-sitekey" value="" type="text" required="">
-								</p>
-								<p>
-									<label>reCAPTCHA v2 Secret Key:</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">reCAPTCHA v2 Secret Key:</label>
 									<input class="form-control" name="gcaptcha-secretkey" value="" type="text" required="">
-								</p>
-								<p>
-									<label>Facebook Profile</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Facebook Profile</label>
 									<input class="form-control" name="facebook" type="url" value="https://www.facebook.com">
-								</p>
-								<p>
-									<label>Instagram Profile</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Instagram Profile</label>
 									<input class="form-control" name="instagram" type="url" value="https://instagram.com">
-								</p>
-								<p>
-									<label>Twitter Profile</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Twitter Profile</label>
 									<input class="form-control" name="twitter" type="url" value="https://twitter.com">
-								</p>
-								<p>
-									<label>Youtube Profile</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Youtube Profile</label>
 									<input class="form-control" name="youtube" type="url" value="https://www.youtube.com">
-								</p>
-								<p>
-									<label>RTL Content (Right-To-Left)</label>
-									<br>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">RTL Content (Right-To-Left)</label>
 									<select class="form-select" name="rtl" required="">
 										<option value="No" selected="">No</option>
 										<option value="Yes">Yes</option>
 									</select>
-								</p>
-								<p>
-									<label>Comments Section</label>
-									<br>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Comments Section</label>
 									<select class="form-select" name="comments" required="">
 										<option value="guests" selected="">Registration not required</option>
 										<option value="registered">
@@ -421,26 +421,24 @@
 											required
 										</option>
 									</select>
-								</p>
-								<p>
-									<label>Date Format</label>
-									<br>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Date Format</label>
 									<select class="form-select" name="date_format" required="">
 										<option value="d.m.Y" selected="">28.02.2023</option>
-										<option value="d F Y">28 February 2023</option>
-										<option value="F j, Y">February 28, 2023</option>
+										<option value="d F Y">28 Feuary 2023</option>
+										<option value="F j, Y">Feuary 28, 2023</option>
 										<option value="Y-m-d">2023-02-28</option>
 										<option value="d/m/Y">28/02/2023</option>
 										<option value="m/d/Y">02/28/2023</option>
 									</select>
-								</p>
-								<p>
-									<label>Background Image</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Background Image</label>
 									<input class="form-control" id="formFile" name="background_image" type="file">
-								</p>
-								<p>
-									<label>Theme</label>
-									<br>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Theme</label>
 									<select class="form-select" name="theme" required="">
 										<option value="Bootstrap 5" selected="">Bootstrap 5</option>
 										<option value="Cerulean">Cerulean</option>
@@ -469,9 +467,9 @@
 										<option value="Yeti">Yeti</option>
 										<option value="Zephyr">Zephyr</option>
 									</select>
-								</p>
-								<div class="form-actions">
-									<input class="btn btn-success col-12" type="submit" name="save" value="Save">
+								</div>
+								<div class="d-grid">
+									<input class="btn btn-success" type="submit" name="save" value="Save">
 								</div>
 							</form>
 						</div>

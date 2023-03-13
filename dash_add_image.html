@@ -334,7 +334,7 @@
 								</a>
 								<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
 									<img class="avatar img-fluid rounded me-1" src="https://dummyimage.com/50x50/d63384/fff.jpg" alt="Charles Hall">
-									<span>Charles Hall</span>
+									<span>Pirulug</span>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a class="dropdown-item" href="pages-profile.html">
@@ -364,29 +364,34 @@
 						<h1 class="h3 d-inline align-middle">Image</h1>
 					</div>
 					<div class="card">
-						<h6 class="card-header">Add Image</h6>
+						<div class="card-header">
+							<h5 class="card-title">Add Image</h5>
+						</div>
 						<div class="card-body">
 							<form action="" method="post" enctype="multipart/form-data">
-								<p>
-									<label>Title</label>
+								<div class="mb-3">
+									<label class="form-label">Title</label>
 									<input class="form-control" name="title" value="" type="text" required="">
-								</p>
-								<p>
-									<label>Image</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Image</label>
 									<input class="form-control" type="file" name="avafile" required="">
-								</p>
-								<p>
-									<label>Active</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Active</label>
 									<br>
 									<select class="form-select" name="active" required="">
 										<option value="Yes" selected="">Yes</option>
 										<option value="No">No</option>
 									</select>
-								</p>
-								<p>
-									<label>Description</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Description</label>
 									<textarea class="form-control"></textarea>
-								</p>
+								</div>
+								<div class="d-grid gap-2">
+									<button class="btn btn-primary">Guardar</button>
+								</div>
 							</form>
 						</div>
 					</div>

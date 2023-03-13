@@ -334,7 +334,7 @@
 								</a>
 								<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
 									<img class="avatar img-fluid rounded me-1" src="https://dummyimage.com/50x50/d63384/fff.jpg" alt="Charles Hall">
-									<span>Charles Hall</span>
+									<span>Pirulug</span>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a class="dropdown-item" href="pages-profile.html">
@@ -367,33 +367,30 @@
 						<h6 class="card-header">Add Post</h6>
 						<div class="card-body">
 							<form action="" method="post" enctype="multipart/form-data">
-								<p>
-									<label>Title</label>
+								<div class="mb-3">
+									<label class="form-label">Title</label>
 									<input class="form-control" name="title" value="" type="text" required="">
-								</p>
-								<p>
-									<label>Image</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Image</label>
 									<input class="form-control" type="file" name="image">
-								</p>
-								<p>
-									<label>Active</label>
-									<br>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Active</label>
 									<select class="form-select" name="active" required="">
 										<option value="Yes" selected="">Yes</option>
 										<option value="No">No</option>
 									</select>
-								</p>
-								<p>
-									<label>Featured</label>
-									<br>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Featured</label>
 									<select class="form-select" name="featured" required="">
 										<option value="Yes">Yes</option>
 										<option value="No" selected="">No</option>
 									</select>
-								</p>
-								<p>
-									<label>Category</label>
-									<br>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Category</label>
 									<select class="form-select" name="category_id" required="">
 										<option value="1">Site News</option>
 										<option value="2">Php</option>
@@ -401,11 +398,11 @@
 										<option value="4">Css</option>
 										<option value="5">Js</option>
 									</select>
-								</p>
-								<p>
-									<label>Content</label>
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Content</label>
 									<textarea class="form-control"></textarea>
-								</p>
+								</div>
 								<input class="btn btn-primary col-12" type="submit" name="add" value="Add">
 							</form>
 						</div>
