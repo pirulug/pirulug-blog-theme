@@ -4,6 +4,9 @@ append config
   -pageName = 'Pages'
   -pageUrl = 'dash_add_page'
 
+block styles
+  link(type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jodit/3.24.2/jodit.es2018.min.css')
+
 block content
   .card
     .card-header 
@@ -15,9 +18,12 @@ block content
           input.form-control(name='title' value='' type='text' required='')
         .mb-3
           label.form-label Content
-          textarea.form-control
+          textarea#editor.form-control
 
         input.btn.btn-primary.col-12(type='submit' name='add' value='Add')
 
 
 block scripts 
+  script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jodit/3.24.2/jodit.es2018.min.js')
+  script. 
+    const editor = Jodit.make('#editor');
